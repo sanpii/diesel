@@ -1,6 +1,6 @@
-extern crate pq_sys;
+extern crate libpq_sys;
 
-use self::pq_sys::*;
+use self::libpq_sys::*;
 use std::ffi::CStr;
 use std::num::NonZeroU32;
 use std::os::raw as libc;

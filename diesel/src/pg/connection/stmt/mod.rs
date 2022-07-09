@@ -1,4 +1,4 @@
-extern crate pq_sys;
+extern crate libpq_sys;
 
 use std::ffi::CString;
 use std::os::raw as libc;
@@ -78,7 +78,7 @@ impl Statement {
     }
 }
 
-fn param_types_to_ptr(param_types: Option<&Vec<u32>>) -> *const pq_sys::Oid {
+fn param_types_to_ptr(param_types: Option<&Vec<u32>>) -> *const libpq_sys::Oid {
     param_types
         .map(|types| types.as_ptr())
         .unwrap_or(ptr::null())

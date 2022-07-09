@@ -1,8 +1,8 @@
 #![allow(clippy::too_many_arguments)]
 
-extern crate pq_sys;
+extern crate libpq_sys;
 
-use self::pq_sys::*;
+use self::libpq_sys::*;
 use std::ffi::{CStr, CString};
 use std::os::raw as libc;
 use std::ptr::NonNull;
